@@ -1,0 +1,299 @@
+/* 
+.blog-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.blog_post {
+  background: #fff;
+  width: 100%; 
+  max-width: 450px; 
+  margin: 20px;
+
+  border-radius: 10px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.container_copy {
+  padding: 2rem;
+  margin-left: 15px;
+}
+
+.img_pod {
+  height: 90px;
+  width: 90px;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  position: absolute;
+  left: -8%;
+  top: -10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landingPage_img {
+  height: 5rem;
+  width: 5rem;
+  position: relative;
+  border-radius: 100%;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+h3 {
+  margin: 0 0 0.5rem 0;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.7rem;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.container_copy>p {
+  margin: 0 0 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.45;
+  height: 199px;
+  color: #333;
+  overflow: hidden;
+}
+
+.btn_primary {
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.0rem;
+  box-shadow: 1px 10px 2rem rgba(255, 94, 98, 0.5);
+  transition: all 0.2s ease-in;
+  text-decoration: none;
+}
+
+.btn_primary:hover {
+  box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
+}
+
+
+@media (max-width: 768px) {
+  .blog_post {
+    margin: 10px; 
+    margin-top: 50px;
+  }
+
+  .img_pod {
+    height: 70px;
+    width: 70px;
+    left: -5%;
+    top: -8%;
+  }
+
+  .landingPage_img {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn_primary {
+    padding: 0.8rem 1.3rem;
+    font-size: 0.9rem; 
+  }
+} 
+ */
+ .landingPage {
+  width: 100%;
+}
+
+.blog-cards {
+display: flex;
+margin-top: 100px;
+}
+
+.blog_post {
+  display: flex;
+  background-color: #f7f7f7;
+}
+
+.bylaw-cards {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f7f7f7;
+}
+
+.bylaw-card {
+  width: calc(32% - 32px);
+  margin: 19px;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  height: 399px;
+}
+
+.bylaw-image {
+  width: 124px;
+  margin: 0 auto 10px;
+  border-radius: 10%;
+  height: 130px;
+}
+
+.bylaw-title {
+  font-size: 20px;
+  margin: 10px 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+.bylaw-para{
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.read-more-button {
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+.landingPage-ads {
+ 
+margin-top: 20px !important;
+}
+/* Media queries for mobile responsiveness */
+
+@media (max-width: 768px) {
+  .blog_post {
+    flex-direction: column;
+  }
+  .landingPage-ads {
+ 
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10;
+  }
+  .blog-cards {
+    display: flex;
+    flex-direction: column;
+
+    }
+    
+  .img_pod {
+    height: 70px;
+    width: 70px;
+    left: -5%;
+    top: -8%;
+  }
+
+  .landingPage_img {
+
+    height: 4rem;
+    width: 4rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn_primary {
+    padding: 0.8rem 1.3rem;
+    font-size: 0.9rem;
+  }
+
+  .bylaw-card {
+    width: calc(100% - 30px);
+  }
+}
+
+.landingPage-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3; /* Gray background color */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Style form elements */
+.landingPage-form label,
+.landingPage-form input,
+.landingPage-form textarea,
+.landingPage-form button {
+  margin-bottom: 10px;
+  width: 100%; /* Make inputs and textarea take up full width */
+}
+
+.landingPage-form button {
+  background-color: black; /* Black button background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Adjust margin between form elements */
+.landingPage-form label,
+.landingPage-form input,
+.landingPage-form textarea {
+  margin-bottom: 15px;
+}
+.form-div-2{
+  display:  flex;
+ 
+}
+.form-div{
+  margin-bottom: 12px;
+  margin-top: -19px;
+}
+
+.service-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: -10px;
+
+}
+
+.service-checkboxes label {
+  display: flex;
+  align-items: center;
+}
+
+.service-checkboxes input[type="checkbox"] {
+  margin-right: 5px;
+}
